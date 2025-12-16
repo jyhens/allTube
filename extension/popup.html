@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AllTube</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 280px;
+        margin: 0;
+        padding: 16px;
+        background-color: #ffffff;
+        color: #222;
+      }
+
+      h1 {
+        font-size: 18px;
+        margin: 0 0 12px 0;
+      }
+
+      .section {
+        margin-bottom: 12px;
+      }
+
+      .label {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 4px;
+      }
+
+      #statusText {
+        font-size: 13px;
+        padding: 8px;
+        background-color: #f3f3f3;
+        border-radius: 4px;
+      }
+
+      select,
+      button {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        background-color: #1a73e8;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:disabled {
+        background-color: #aaa;
+        cursor: not-allowed;
+      }
+
+      .footer {
+        font-size: 11px;
+        color: #999;
+        text-align: center;
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>AllTube</h1>
+
+    <!-- STATUS -->
+    <div class="section">
+      <div class="label">Status</div>
+      <div id="statusText">Bereit</div>
+    </div>
+
+    <!-- SPRACHAUSWAHL -->
+    <div class="section">
+      <div class="label">Zielsprache</div>
+      <select id="languageSelect">
+        <option value="de">Deutsch</option>
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
+
+    <!-- ACTION BUTTON -->
+    <div class="section">
+      <button id="translateBtn">
+        Audio übersetzen
+      </button>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      AllTube MVP · Free Plan
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
