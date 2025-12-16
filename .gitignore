@@ -1,0 +1,16 @@
+ # OS
+.DS_Store
+Thumbs.db
+
+# Node / Backend
+backend/node_modules/
+backend/.env
+
+# Build / Cache
+dist/
+build/
+coverage/
+
+# Editor
+.vscode/
+
